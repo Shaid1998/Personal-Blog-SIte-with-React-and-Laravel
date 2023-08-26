@@ -1,11 +1,15 @@
 import { Component, Fragment } from "react";
+import { BrowserRouter } from "react-router-dom";
+import AppRoute from "./Route/AppRoute";
 
 
 class App extends Component {
   render(){
     return (
       <Fragment>
-        <h1>This is fresh</h1>
+        <BrowserRouter>
+          <AppRoute />
+        </BrowserRouter>
       </Fragment>
     );
   }
