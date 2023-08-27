@@ -4,3 +4,45 @@
 body{
     background-color: #ffffff;
 }
+.topFixedBanner{
+    background-image: url("../Images/banner.jpg");
+    min-height: 550px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.topBannerOverLay{
+    position: absolute;
+    min-height: 550px;
+    width: 100%;
+    background: rgb(0, 0, 0, 0.7);
+}
+
+.TopContent{
+    margin-top: 15em;
+}
+.topTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 48px;
+}
+.topShbTitle{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 22px;
+}
+.FooterTitle{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: black;
+    font-size: 25px;
+}
+.FooterShbTitle{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 16px;
+}
