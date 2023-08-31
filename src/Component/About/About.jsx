@@ -5,7 +5,7 @@ class About extends Component {
     render() {
         return (
             <Fragment>
-                <Container>
+                <Container className='FooterPosition' fluid={true}>
                     <Row>
                         <Col>
                             <h1>About Page</h1>

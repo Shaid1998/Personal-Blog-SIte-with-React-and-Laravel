@@ -26,7 +26,7 @@ class Footer extends Component {
                     </Row>
                 </Container>
                 <Container fluid={true} className="text-center m-0 pt-3 pb-1 bg-dark">
-                    <Container>
+                    <Container className='copyright'>
                     <Row>
                         <h6 className="text-white">© Copyright 2021 by MyBlog, All Rights Reserved</h6>
                     </Row>

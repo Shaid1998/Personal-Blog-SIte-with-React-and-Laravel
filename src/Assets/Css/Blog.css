@@ -28,3 +28,25 @@
     color: white !important;
     background: #051b35 !important;
 }
+.BlogDetailsTitle{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    text-align: center;
+}
+.BlogDetails{
+    font-size: 15px;
+    font-family:'Raleway', sans-serif;
+    font-weight: 400;
+    display: flex;
+    font: bold;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+.FooterPosition{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
