@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
-import { Button, Col, Container, Form, Nav, NavDropdown, NavLink, Navbar, Row } from 'react-bootstrap'
-import { Link } from 'react-router-dom'
+import { Button, Container, Form, Nav, NavDropdown, Navbar } from 'react-bootstrap'
+
 
 class NavBar extends Component {
   render() {
@@ -9,10 +9,10 @@ class NavBar extends Component {
         <Container className='NavContent' fluid={true}>
             <Navbar expand="lg" className="bg-body-tertiary">
                 <Container fluid>
-                    <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+                    <Navbar.Brand href="#">My Blog</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">
-                            <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
+                            <Nav className="Navitem me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
                                 <Nav.Link href="#action1">Home</Nav.Link>
                                 <NavDropdown title="Blog">
                                     <NavDropdown.Item href="#action3">Popular</NavDropdown.Item>
