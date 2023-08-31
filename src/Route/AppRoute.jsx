@@ -5,6 +5,7 @@ import AboutPage from '../Pages/AboutPage'
 import BlogPage from '../Pages/BlogPage'
 import TrandingBlogPage from '../Pages/TrandingBlogPage'
 import PopularBlogPage from '../Pages/PopularBlogPage'
+import ViewBlogPage from '../Pages/ViewBlogPage'
 
 class AppRoute extends Component {
   render() {
@@ -16,6 +17,7 @@ class AppRoute extends Component {
                 <Route exact path="/allblog" element={<BlogPage />}></Route>
                 <Route exact path="/tranding" element={<TrandingBlogPage />}></Route>
                 <Route exact path="/popular" element={<PopularBlogPage />}></Route>
+                <Route exact path="/viewblog" element={<ViewBlogPage />}></Route>
             </Routes>
         </Fragment>
         )
