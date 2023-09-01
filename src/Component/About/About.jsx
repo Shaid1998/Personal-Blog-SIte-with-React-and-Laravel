@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Container, Row } from 'react-bootstrap'
 
 class About extends Component {
     render() {
@@ -7,9 +7,7 @@ class About extends Component {
             <Fragment>
                 <Container className='FooterPosition' fluid={true}>
                     <Row>
-                        <Col>
-                            <h1>About Page</h1>
-                        </Col>
+                        
                     </Row>
                 </Container>
             </Fragment>

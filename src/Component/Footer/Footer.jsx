@@ -13,10 +13,10 @@ class Footer extends Component {
                         </Col>
                         <Col lg={3} md={3} sm={3}>
                             <h1 className='footer-menu-title'>About Me</h1>
-                            <h4 className='footer-link' href='#'>Portfolio</h4>
+                            <a className='footer-link' href='#'>Developer Portfolio</a>
                         </Col>
                         <Col lg={3} md={3} sm={3}>
-                            <h1 className='footer-menu-title'>Contact Me</h1>
+                            <h1 className='footer-menu-title'>Contact Us</h1>
                             <h4 className='footer-text'>Gmail: shaidurrahman225@gmail.com</h4>
                             <h4 className='footer-text'>Phone: +8801928-466221</h4>
                         </Col>
