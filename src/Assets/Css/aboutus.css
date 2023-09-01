@@ -1,0 +1,38 @@
+.About{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: rgb(83, 225, 12);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+.MotivationTitle{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: italic;
+    text-decoration: underline;
+}
+.MotivationDetails{
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.GoalTitle{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    font-style: italic;
+    text-decoration: underline;
+}
+.GoalDetails{
+    text-align: justify;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}

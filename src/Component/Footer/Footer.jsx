@@ -13,7 +13,7 @@ class Footer extends Component {
                         </Col>
                         <Col lg={3} md={3} sm={3}>
                             <h1 className='footer-menu-title'>About Me</h1>
-                            <a className='footer-link' href='#'>Developer Portfolio</a>
+                            <a className='footer-link' href='/portfolio'>Developer Portfolio</a>
                         </Col>
                         <Col lg={3} md={3} sm={3}>
                             <h1 className='footer-menu-title'>Contact Us</h1>
