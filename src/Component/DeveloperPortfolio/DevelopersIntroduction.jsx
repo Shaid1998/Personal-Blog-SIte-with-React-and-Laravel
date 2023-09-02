@@ -5,12 +5,35 @@ export class DevelopersIntroduction extends Component {
     render() {
       return (
         <Fragment>
-          <Container fluid={true}>
+          <Container className='IntroStart' fluid={true}>
             <Row>
-                <h4>Full Name: Md.Shaidur Rahman</h4>
-                <h4>Education: Bsc in Software Engineering</h4>
-                <h4>Graduate Status: Completed (2022) </h4>
-                <h4>University: Daffodil International University</h4>
+              <Table striped bordered hover>
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Full Name:</td>
+                      <td>Md. Shaidur Rahman</td>
+                    </tr>
+                    <tr>
+                      <td>Education:</td>
+                      <td>Bsc in Software Engineering</td>
+                    </tr>
+                    <tr>
+                      <td>Graduate Status:</td>
+                      <td>Completed (2022)</td>
+                    </tr>
+                    <tr>
+                      <td>University:</td>
+                      <td>Daffodil International University</td>
+                    </tr>
+                  </tbody>
+                </Table>
+                <h4> </h4>
                 <h4>Completed Course: </h4>
                 <Table striped bordered hover>
                   <thead>
