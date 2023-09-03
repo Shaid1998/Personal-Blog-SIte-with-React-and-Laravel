@@ -1,13 +1,15 @@
 import React, { Component, Fragment } from 'react'
-import { Container } from 'react-bootstrap'
+import PopularBlog from '../Blog/PopularBlog'
+import TrandingBlog from '../Blog/TrandingBlog'
+import HomeTop from '../Home/HomeTop'
 
 class AllBlog extends Component {
   render() {
     return (
       <Fragment>
-        <Container className='FooterPosition'>
-          <h1>All Blog Page</h1>
-        </Container>
+          <HomeTop />
+          <PopularBlog />
+          <TrandingBlog />
       </Fragment>
     )
   }

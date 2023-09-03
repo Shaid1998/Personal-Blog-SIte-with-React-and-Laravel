@@ -151,3 +151,27 @@
     padding-top: 15px;
     padding-bottom: 15px;
 }
+.Links{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+.Icon{
+    text-align: center;
+    position: relative;
+}
+.Icone{
+    color: #0d00ff;
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: 500;
+}
+.Icone:hover{
+    color: #ff2a00;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: 700;
+}

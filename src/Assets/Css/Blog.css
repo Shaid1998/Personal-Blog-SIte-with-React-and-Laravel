@@ -50,3 +50,23 @@
     flex-direction: column;
     height: 100%;
 }
+.BlogTitleTopic{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #16f43e9b;
+    text-decoration: underline;
+}
+.popular{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.tranding{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
