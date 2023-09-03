@@ -7,7 +7,7 @@ class DeveloperAchivments extends Component {
         <Fragment>
           <Container className='IntroStart' fluid={true}>
             <h1 className='TitleTopic'>Achivments</h1>
-            <Row>
+            <Row className='Achivment'>
               <Col lg={12} md={12} sm={12}> 
                 <h4 className='awardTitle'>Award Title 1</h4>
                 <p>

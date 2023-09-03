@@ -6,9 +6,9 @@ class NavBar extends Component {
   render() {
     return (
       <Fragment>
-        <Container className='NavContent' fluid={true}>
+        <Container className='NavContent' fluid>
             <Navbar expand="lg" className="bg-body-tertiary">
-                <Container fluid>
+                <Container fluid={true}>
                     <Navbar.Brand href="/">My Blog</Navbar.Brand>
                         <Navbar.Toggle aria-controls="navbarScroll" />
                         <Navbar.Collapse id="navbarScroll">

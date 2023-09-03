@@ -1,9 +1,6 @@
 .IntroStart{
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-
+    margin-top: 1px;
+    margin-bottom: 1rem;
 }
 .TitleTopic{
     text-align: center;
@@ -19,6 +16,7 @@
     font-weight: 700;
     color: #000;
     text-align: center;
+    padding-top: 15px;
 }
 .PortDSub{
     font-size: 18px;
@@ -45,4 +43,49 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     text-align: justify;
+}
+.ProjectTitle{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center; 
+}
+.ProjectDescription{
+    font-size: 15px;
+    font-family:'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+
+}
+.ProjectImg{
+    height: 300px;
+    width: 100%;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
+    
+}
+.ProjectButton{
+    font-weight: 300;
+    padding: 5px;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white !important;
+    background: #051b35 !important;
+}
+.Project{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 15px;
+}
+.Intro{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 15px;
+}
+.Achivment{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 15px;
 }
