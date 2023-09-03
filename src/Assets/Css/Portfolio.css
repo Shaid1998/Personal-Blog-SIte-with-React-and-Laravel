@@ -3,16 +3,46 @@
     margin-bottom: 2rem;
     margin-left: 2rem;
     margin-right: 2rem;
+
+}
+.TitleTopic{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: #1500ff9b;
+    text-decoration: underline;
 }
 .PortDTitle{
-    font-size: 25px;
+    font-size: 35px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    text-align: justify;
+    color: #000;
+    text-align: center;
 }
-.PortDName{
+.PortDSub{
     font-size: 18px;
     font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+.DevImg{
+    height: 300px;
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
+.awardTitle{
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: underline;
+}
+.awardDetails{
+    font-size: 15px;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     text-align: justify;
 }
