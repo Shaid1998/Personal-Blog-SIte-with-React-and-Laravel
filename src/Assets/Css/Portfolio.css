@@ -78,14 +78,76 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding-top: 15px;
+    padding-bottom: 15px;
 }
 .Intro{
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding-top: 15px;
+    padding-bottom: 15px;
 }
 .Achivment{
     margin-top: 2rem;
     margin-bottom: 2rem;
     padding-top: 15px;
+    padding-bottom: 15px;
+}
+.JobTitle{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: justify; 
+}
+.JobCompany{
+    font-size: 20px;
+    font-family:'Raleway', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    padding-left: 10px;
+}
+.JobDetails{
+    font-size: 15px;
+    font-family:'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    padding-left: 15px;
+}
+.Employment{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.DegreeTitle{
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-align: justify; 
+}
+.Intitution{
+    font-size: 20px;
+    font-family:'Raleway', sans-serif;
+    font-weight: 600;
+    text-align: justify;
+    padding-left: 10px;
+}
+.YearAndStatus{
+    font-size: 20px;
+    font-family:'Raleway', sans-serif;
+    font-weight: 500;
+    text-align: justify;
+    padding-left: 15px;
+}
+.DegreeDetails{
+    font-size: 15px;
+    font-family:'Raleway', sans-serif;
+    font-weight: 400;
+    text-align: justify;
+    padding-left: 20px;
+}
+.Education{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }

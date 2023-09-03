@@ -6,7 +6,7 @@ class CompletedWorks extends Component {
       return (
         <Fragment>
           <Container className='IntroStart' fluid={true}>
-          <h1 className='TitleTopic'>Completed Work</h1>
+            <h1 className='TitleTopic'>Resent Work</h1>
             <Row className='Project'>
               <Col lg={3} md={3} sm={4}>
                 <Card className='Card'>
