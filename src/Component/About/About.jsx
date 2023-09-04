@@ -3,6 +3,8 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { Component, Fragment } from 'react'
 import { Button, Col, Container, Form, Row } from 'react-bootstrap'
+import RestClient from '../../BaseUrl/RestClient'
+import BaseUrl from '../../BaseUrl/BaseUrl'
 
 
 class About extends Component {
@@ -12,7 +14,13 @@ class About extends Component {
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
         let message = document.getElementById("message").value;
-        alert(name+'/'+email+'/'+message);
+
+        let JsonObject = {name:name,email:email,message:message}
+        RestClient.PostRequest(BaseUrl.ContactSent,JSON.stringify(JsonObject)).then(result=>{
+            alert(result);
+        }).catch(error=>{
+            alert('Error');
+        })
     }
     render() {
         return (

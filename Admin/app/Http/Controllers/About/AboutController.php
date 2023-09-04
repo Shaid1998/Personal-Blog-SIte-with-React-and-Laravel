@@ -8,11 +8,17 @@ use App\Models\About;
 
 class AboutController extends Controller
 {
+    public function MotivationAndGoal(){
+        $result = About::all();
+        return $result;
+    }//End Method
+
+    
     public function sendContact(Request $request){
         $result = About::insert([
-            'name' => $request->name,
-            'email' => $request->email,
-            'message' => $request->message,
+            'sender_name' => $request->name,
+            'sender_emgil' => $request->email,
+            'sender_message' => $request->message,
         ]);
 
         if($result == true){
@@ -22,8 +28,5 @@ class AboutController extends Controller
         }
     }//End Method
 
-    public function MotivationAndGoal(){
-        $result = About::all();
-        return $result;
-    }
+    
 }
