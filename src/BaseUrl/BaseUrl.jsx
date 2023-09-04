@@ -4,6 +4,7 @@ class BaseUrl{
 
     static AllBlog = this.BaseURL+'/allblog';
     static ResentBlog = this.BaseURL+'/resentblog';
+    static FooterData = this.BaseURL+'/footer';
 }
 
 export default BaseUrl

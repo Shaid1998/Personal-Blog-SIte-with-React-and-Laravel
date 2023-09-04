@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Blog\BlogController;
+use App\Http\Controllers\Footer\FooterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -22,4 +23,7 @@ use App\Http\Controllers\Blog\BlogController;
 //Blog Route
 Route::get('/allblog', [BlogController::class,'onAllSelect']);
 Route::get('/resentblog', [BlogController::class,'onSelectFour']);
+
+//footer Route
+Route::get('/footer', [FooterController::class,'onAllSelect']);
 
