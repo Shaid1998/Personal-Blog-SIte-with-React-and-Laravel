@@ -36,3 +36,18 @@
     font-weight: 400;
     font-style: italic;
 }
+.serviceName{
+    color: #051b35;
+    margin: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.serviceDescription{
+    color: #051b35;
+    margin: 1rem;
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+}

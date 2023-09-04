@@ -1,7 +1,19 @@
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons'
+import { faPhone } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import React, { Component, Fragment } from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Button, Col, Container, Form, Row } from 'react-bootstrap'
+
 
 class About extends Component {
+
+
+    sendContact(){
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        let message = document.getElementById("message").value;
+        alert(name+'/'+email+'/'+message);
+    }
     render() {
         return (
             <Fragment>
@@ -38,6 +50,36 @@ class About extends Component {
                                 <br></br> <br></br>
                                 We selected 24 of the best motivational speeches from business, sports, entertainment, and other fields to help you stay motivated no matter what your work throws at you. Watch these videos if you want to feel inspired by a project. Trust me, I was wiping my eyes after I saw them. And while the messages vary from speech to speech, they can put you in the optimal frame of mind for tackling and crushing your next big challenge.
                                 <br></br>
+                            </p>
+                        </Col>
+                    </Row>
+                </Container>
+                <Container fluid={true}>
+                    <Row>
+                        <Col lg={6} md={6} sm={12}>
+                            <h1 className="serviceName">Quick Connect</h1>
+                            <Form>
+                                <Form.Group  >
+                                    <Form.Label>Your Name </Form.Label>
+                                    <Form.Control id="name" type="text" placeholder="Enter Your Name" /> 
+                                </Form.Group>
+                                <Form.Group>
+                                    <Form.Label>Your Email </Form.Label>
+                                    <Form.Control id="email" type="email" placeholder="Enter Your email" /> 
+                                </Form.Group>
+                                <Form.Group  >
+                                    <Form.Label>Message  </Form.Label>
+                                    <Form.Control id='message' as="textarea" rows={3} />
+                                </Form.Group>
+                                <Button onClick={this.sendContact} variant="primary">Submit</Button>
+                            </Form>
+                        </Col>
+                        <Col lg={6} md={6} sm={12}>
+                            <h1 className="serviceName">Discuss Now</h1>
+                            <p className="serviceDescription">
+                                 Dhaka, Bangladesh<br></br>
+                                <FontAwesomeIcon icon={faEnvelope}  /> Email : shaidurrahman225@gmail.com<br></br>
+                                <FontAwesomeIcon icon={faPhone}  /> Phone : +8801928466221<br></br>
                             </p>
                         </Col>
                     </Row>
