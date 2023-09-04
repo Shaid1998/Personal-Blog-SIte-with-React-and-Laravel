@@ -1,92 +1,41 @@
 import React, { Component, Fragment } from 'react'
 import { Button, Card, Col, Container, Row } from 'react-bootstrap'
+import BaseUrl from '../../BaseUrl/BaseUrl';
+import RestClient from '../../BaseUrl/RestClient';
 
 class Blog extends Component {
+    constructor(){
+        super();
+        this.state={
+          BlogData:[]
+        }
+      }
+      componentDidMount(){
+        RestClient.GetRequest(BaseUrl.AllBlog).then(result=>{
+          this.setState({BlogData:result});
+        }).catch(error=>{
+          this.setState({short_title:'???',short_description:'???'})
+        })
+      }
     render() { 
+        const MyList = this.state.BlogData;
+        const MyView = MyList.map(MyList=>{
+            return <Col lg={3} md={3} sm={4}>
+                        <Card className='Card'>
+                            <Card.Img className='BlogImg'  variant="top" src={MyList.image} />
+                            <Card.Body>
+                                <Card.Title className='BlogTitle'>{MyList.short_title}</Card.Title>
+                                <Card.Text className='BlogDescription'>{MyList.short_description}</Card.Text>
+                                <Button className='BlogButton' href='/viewblog' variant="primary">read more</Button>
+                            </Card.Body>
+                        </Card>
+                    </Col>
+        })
         return (
             <Fragment> 
                 <Container>
                     <Row>
-                        <Col lg={3} md={3} sm={4}>
-                            <Card className='Card'>
-                                <Card.Img className='BlogImg'  variant="top" src="https://img.freepik.com/free-vector/hacker-activity-concept_23-2148549185.jpg?w=740&t=st=1693467651~exp=1693468251~hmac=cb690aec5e1beb78841214902876051cb806e63a1a7f94ef3b8ef50a9b3abc9e" />
-                                <Card.Body>
-                                    <Card.Title className='BlogTitle'>Computer Virus</Card.Title>
-                                    <Card.Text className='BlogDescription'>A computer virus is a type of malware that attaches to another program (like a document), which can replicate and spread after a person first runs it on their system. For instance, you could receive an email with a malicious attachment, open the file unknowingly, and then the computer virus runs on your computer. Viruses are harmful and can destroy data, slow down system resources, and log keystrokes.</Card.Text>
-                                    <Button className='BlogButton' href='/viewblog' variant="primary">read more</Button>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col lg={3} md={3} sm={4}>
-                            <Card className='Card'>
-                                <Card.Img className='BlogImg' variant="top" src="https://img.freepik.com/free-vector/hacker-activity-concept_23-2148549185.jpg?w=740&t=st=1693467651~exp=1693468251~hmac=cb690aec5e1beb78841214902876051cb806e63a1a7f94ef3b8ef50a9b3abc9e" />
-                                <Card.Body>
-                                    <Card.Title className='BlogTitle'>Computer Virus</Card.Title>
-                                    <Card.Text className='BlogDescription'>A computer virus is a type of malware that attaches to another program (like a document), which can replicate and spread after a person first runs it on their system. For instance, you could receive an email with a malicious attachment, open the file unknowingly, and then the computer virus runs on your computer. Viruses are harmful and can destroy data, slow down system resources, and log keystrokes.</Card.Text>
-                                    <Button className='BlogButton' href='/viewblog' variant="primary">read more</Button>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col lg={3} md={3} sm={4}>
-                            <Card className='Card'>
-                                <Card.Img className='BlogImg' variant="top" src="https://img.freepik.com/free-vector/hacker-activity-concept_23-2148549185.jpg?w=740&t=st=1693467651~exp=1693468251~hmac=cb690aec5e1beb78841214902876051cb806e63a1a7f94ef3b8ef50a9b3abc9e" />
-                                <Card.Body>
-                                    <Card.Title className='BlogTitle'>Computer Virus</Card.Title>
-                                    <Card.Text className='BlogDescription'>A computer virus is a type of malware that attaches to another program (like a document), which can replicate and spread after a person first runs it on their system. For instance, you could receive an email with a malicious attachment, open the file unknowingly, and then the computer virus runs on your computer. Viruses are harmful and can destroy data, slow down system resources, and log keystrokes.</Card.Text>
-                                    <Button className='BlogButton' href='/viewblog' variant="primary">read more</Button>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col lg={3} md={3} sm={4}>
-                            <Card className='Card'>
-                                <Card.Img className='BlogImg' variant="top" src="https://img.freepik.com/free-vector/hacker-activity-concept_23-2148549185.jpg?w=740&t=st=1693467651~exp=1693468251~hmac=cb690aec5e1beb78841214902876051cb806e63a1a7f94ef3b8ef50a9b3abc9e" />
-                                <Card.Body>
-                                    <Card.Title className='BlogTitle'>Computer Virus</Card.Title>
-                                    <Card.Text className='BlogDescription'>A computer virus is a type of malware that attaches to another program (like a document), which can replicate and spread after a person first runs it on their system. For instance, you could receive an email with a malicious attachment, open the file unknowingly, and then the computer virus runs on your computer. Viruses are harmful and can destroy data, slow down system resources, and log keystrokes.</Card.Text>
-                                    <Button className='BlogButton' href='/viewblog' variant="primary">read more</Button>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col lg={3} md={3} sm={4}>
-                            <Card className='Card'>
-                                <Card.Img className='BlogImg' variant="top" src="https://img.freepik.com/free-vector/hacker-activity-concept_23-2148549185.jpg?w=740&t=st=1693467651~exp=1693468251~hmac=cb690aec5e1beb78841214902876051cb806e63a1a7f94ef3b8ef50a9b3abc9e" />
-                                <Card.Body>
-                                    <Card.Title className='BlogTitle'>Computer Virus</Card.Title>
-                                    <Card.Text className='BlogDescription'>A computer virus is a type of malware that attaches to another program (like a document), which can replicate and spread after a person first runs it on their system. For instance, you could receive an email with a malicious attachment, open the file unknowingly, and then the computer virus runs on your computer. Viruses are harmful and can destroy data, slow down system resources, and log keystrokes.</Card.Text>
-                                    <Button className='BlogButton' href='/viewblog' variant="primary">read more</Button>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col lg={3} md={3} sm={4}>
-                            <Card className='Card'>
-                                <Card.Img className='BlogImg' variant="top" src="https://img.freepik.com/free-vector/hacker-activity-concept_23-2148549185.jpg?w=740&t=st=1693467651~exp=1693468251~hmac=cb690aec5e1beb78841214902876051cb806e63a1a7f94ef3b8ef50a9b3abc9e" />
-                                <Card.Body>
-                                    <Card.Title className='BlogTitle'>Computer Virus</Card.Title>
-                                    <Card.Text className='BlogDescription'>A computer virus is a type of malware that attaches to another program (like a document), which can replicate and spread after a person first runs it on their system. For instance, you could receive an email with a malicious attachment, open the file unknowingly, and then the computer virus runs on your computer. Viruses are harmful and can destroy data, slow down system resources, and log keystrokes.</Card.Text>
-                                    <Button className='BlogButton' href='/viewblog' variant="primary">read more</Button>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col lg={3} md={3} sm={4}>
-                            <Card className='Card'>
-                                <Card.Img className='BlogImg' variant="top" src="https://img.freepik.com/free-vector/hacker-activity-concept_23-2148549185.jpg?w=740&t=st=1693467651~exp=1693468251~hmac=cb690aec5e1beb78841214902876051cb806e63a1a7f94ef3b8ef50a9b3abc9e" />
-                                <Card.Body>
-                                    <Card.Title className='BlogTitle'>Computer Virus</Card.Title>
-                                    <Card.Text className='BlogDescription'>A computer virus is a type of malware that attaches to another program (like a document), which can replicate and spread after a person first runs it on their system. For instance, you could receive an email with a malicious attachment, open the file unknowingly, and then the computer virus runs on your computer. Viruses are harmful and can destroy data, slow down system resources, and log keystrokes.</Card.Text>
-                                    <Button className='BlogButton' href='/viewblog' variant="primary">read more</Button>
-                                </Card.Body>
-                            </Card>
-                        </Col>
-                        <Col lg={3} md={3} sm={4}>
-                            <Card className='Card'>
-                                <Card.Img className='BlogImg' variant="top" src="https://img.freepik.com/free-vector/hacker-activity-concept_23-2148549185.jpg?w=740&t=st=1693467651~exp=1693468251~hmac=cb690aec5e1beb78841214902876051cb806e63a1a7f94ef3b8ef50a9b3abc9e" />
-                                <Card.Body>
-                                    <Card.Title className='BlogTitle'>Computer Virus</Card.Title>
-                                    <Card.Text className='BlogDescription'>A computer virus is a type of malware that attaches to another program (like a document), which can replicate and spread after a person first runs it on their system. For instance, you could receive an email with a malicious attachment, open the file unknowingly, and then the computer virus runs on your computer. Viruses are harmful and can destroy data, slow down system resources, and log keystrokes.</Card.Text>
-                                    <Button className='BlogButton' href='/viewblog' variant="primary">read more</Button>
-                                </Card.Body>
-                            </Card>
-                        </Col>
+                        {MyView}
                     </Row>
                 </Container>
             </Fragment>

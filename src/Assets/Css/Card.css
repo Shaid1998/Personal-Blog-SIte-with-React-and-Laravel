@@ -1,4 +1,6 @@
 .Card {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     width: 100% !important;
     text-decoration: none;
     border: none !important;
